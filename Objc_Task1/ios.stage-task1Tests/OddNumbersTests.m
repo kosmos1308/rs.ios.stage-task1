@@ -32,10 +32,6 @@
 
 - (void)test2 {
     NSArray *numbers = @[@"4",@"2",@"8",@"1",@"9",@"5",@"8"];
-    //NSArray *numbers = @[@4,@2,@8,@1,@9,@5,@8];
-    NSLog(@"ARRAY NAME INDEX = %@", numbers);
-    NSLog(@"ARRAY COUNT = %lu", numbers.count);
-    NSLog(@"ARRAY index = %@", numbers[4], numbers[4], numbers[5]);
     XCTAssert([self.oddNumbers oddNumbers:numbers] == 3);
 }
 

@@ -18,14 +18,28 @@
 
 - (NSInteger)oddNumbers:(NSArray <NSNumber *> *)array {
     
-    NSArray *numbers = array;
 
-    //test1
+    //test 1
     if (array == nil) {
         return 0;
-    } if else (array != nil) {
-        return <#expression#>;
     }
+    
+    //test 2-6
+    NSInteger count = 0;
+    if (array != nil) {
+        for (int i = 0; i < [array count]; i++) {
+            if ([[array objectAtIndex:i]intValue] % 2 != 0) {
+                    count += 1;
+                }
+            }
+        }
+    return count;
+    
+//    for ( int i= 0; i<[array count]; i++) {
+//        if [[array objectAtIndex: i] intValue] % 2 != 0 {
+//            return array +1;
+//        }
+//    }
     
     
 
