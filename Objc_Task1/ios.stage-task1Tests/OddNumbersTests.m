@@ -26,7 +26,6 @@
 
 - (void)test1 {
     NSArray *numbers = nil;
-    NSLog(@"array write = %@", numbers);
     XCTAssert([self.oddNumbers oddNumbers:numbers] == 0);
 }
 
